@@ -1,93 +1,227 @@
 # 🚦 SimTraffic AI
 
-> **Simulation-Based Intelligent Traffic Management System using NetLogo, Machine Learning, Flask, and React**
+> **Simulation-Based Intelligent Traffic Management System using NetLogo, Machine Learning, Flask and React**
 
-![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
-![Flask](https://img.shields.io/badge/Flask-API-black?logo=flask)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?logo=scikitlearn)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![Flask](https://img.shields.io/badge/Flask-REST%20API-black)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
 ![NetLogo](https://img.shields.io/badge/NetLogo-Simulation-green)
 ![License](https://img.shields.io/badge/License-Educational-lightgrey)
 
-SimTraffic AI is an intelligent traffic congestion prediction system that combines traffic simulation, machine learning, and a modern web dashboard. The system simulates vehicle movement in NetLogo, collects traffic data, trains a machine learning model, and predicts traffic congestion through a React-based user interface.
+---
+
+# 📌 Project Overview
+
+SimTraffic AI is an intelligent traffic congestion prediction and traffic management system developed using **Machine Learning**, **NetLogo Simulation**, **Flask REST API**, and **React.js**.
+
+The system simulates road traffic using NetLogo, generates traffic datasets, trains a Machine Learning model, predicts congestion levels, and provides intelligent traffic management recommendations through a modern interactive dashboard.
+
+Unlike a traditional traffic prediction project, SimTraffic AI also provides practical decision support for traffic controllers by estimating vehicle delay and recommending adaptive traffic signal timing.
 
 ---
 
-## 📌 Features
+# ✨ Features
 
-- 🚗 Traffic simulation using NetLogo
-- 📊 Automatic traffic dataset generation
-- 🤖 Machine Learning congestion prediction
-- 🌐 REST API built with Flask
-- ⚛️ Modern React dashboard
-- 📈 Traffic data visualization
-- 🔍 Real-time congestion prediction
+- 🚗 NetLogo Traffic Simulation
+- 🤖 AI-Based Traffic Congestion Prediction
+- 📈 Machine Learning Model (Scikit-Learn)
+- ⏱ Realistic Traffic Delay Estimation
+- 🚦 Smart Signal Timing Recommendation
+- 🧭 Traffic Management Recommendation
+- 🚨 Traffic Severity Meter
+- 📄 PDF Traffic Prediction Report
+- 📊 Interactive Analytics Dashboard
+- 📈 Congestion Charts
+- 📜 Prediction History
+- 🌐 Flask REST API
+- 💻 Modern React Dashboard
 
 ---
 
-## 🛠️ Technology Stack
+# 🚀 Novel Features
+
+Unlike basic traffic prediction systems, SimTraffic AI introduces several intelligent decision-support features.
+
+### 🚨 Traffic Severity Meter
+
+Displays congestion risk using an interactive severity meter.
+
+Example:
+
+- LOW
+- MEDIUM
+- HIGH
+- CRITICAL
+
+---
+
+### ⏱ Intelligent Delay Estimation
+
+The system estimates expected vehicle waiting time using traffic parameters instead of displaying only congestion classes.
+
+Example
+
+```
+Estimated Delay
+
+8.4 minutes
+```
+
+---
+
+### 🚦 Adaptive Signal Recommendation
+
+The system recommends signal timing adjustments according to congestion level.
+
+Example
+
+```
+Increase Green Signal Time by 25 Seconds
+```
+
+---
+
+### 🧭 Traffic Management Recommendation
+
+Provides actionable guidance for traffic controllers.
+
+Example
+
+```
+Priority should be given to the highly congested road.
+```
+
+---
+
+### 📄 Download Prediction Report
+
+Users can generate a professional PDF report containing:
+
+- Prediction Result
+- Delay Estimation
+- Congestion Risk
+- Signal Recommendation
+- Traffic Management Recommendation
+- Report Generation Date
+
+---
+
+### 📊 Interactive Analytics Dashboard
+
+Dashboard includes
+
+- Average Congestion
+- Average Delay
+- Highest Congestion
+- Lowest Vehicle Speed
+- Total Predictions
+- High vs Low Congestion Ratio
+- Pie Chart
+- Bar Chart
+- Prediction History Table
+
+---
+
+# 🛠 Technology Stack
 
 | Technology | Purpose |
-|------------|---------|
+|------------|----------|
 | NetLogo | Traffic Simulation |
 | Python | Data Processing |
 | Pandas | Dataset Analysis |
-| Scikit-learn | Machine Learning |
-| Flask | Backend REST API |
-| React | Frontend Dashboard |
+| NumPy | Numerical Processing |
+| Scikit-Learn | Machine Learning |
+| Flask | REST API |
+| React | Frontend |
+| Recharts | Interactive Charts |
+| jsPDF | PDF Report Generation |
 | Vite | React Development |
 | Git & GitHub | Version Control |
 
 ---
 
-# 📂 Project Structure
+# 📁 Project Structure
 
 ```
 SimTraffic-AI/
+
 │
+
 ├── backend/
-│   ├── app.py
-│   ├── train_model.py
-│   ├── analyze.py
-│   ├── predict.py
-│   ├── traffic_model.pkl
-│   └── requirements.txt
+
+│ ├── app.py
+
+│ ├── train_model.py
+
+│ ├── analyze.py
+
+│ ├── predict.py
+
+│ ├── traffic_model.pkl
+
+│ └── requirements.txt
+
 │
+
 ├── dataset/
-│   └── traffic_data.csv
+
+│ └── traffic_data.csv
+
 │
+
 ├── frontend/
-│   ├── src/
-│   ├── public/
-│   ├── package.json
-│   └── vite.config.js
+
+│ ├── public/
+
+│ ├── src/
+
+│ ├── package.json
+
+│ └── vite.config.js
+
 │
+
 ├── simulation/
-│   └── traffic_model.nlogo
+
+│ └── traffic_model.nlogo
+
 │
+
 ├── screenshots/
-│   ├── netlogo.png
-│   ├── dashboard.png
-│   ├── prediction.png
-│   └── backend_api.png
+
+│ ├── dashboard.png
+
+│ ├── backend_api.png
+
+│ ├── netlogo.png
+
+│ ├── prediction.png
+
+│ ├── analytics.png
+
+│ └── report.png
+
 │
+
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙ Installation
 
-## 1️⃣ Clone Repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/Navodya52/SimTraffic-AI.git
+
 cd SimTraffic-AI
 ```
 
 ---
 
-## 2️⃣ Backend Setup
+## Backend
 
 ```bash
 cd backend
@@ -99,15 +233,13 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
----
-
-## 3️⃣ Run Flask Server
+Run
 
 ```bash
 python app.py
 ```
 
-Server will start at
+Server
 
 ```
 http://127.0.0.1:5000
@@ -115,7 +247,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 4️⃣ Frontend Setup
+## Frontend
 
 ```bash
 cd frontend
@@ -135,55 +267,66 @@ http://localhost:5173
 
 # 🧠 Machine Learning Model
 
-The machine learning model is trained using traffic simulation data generated from NetLogo.
-
 ### Input Features
 
 - Waiting Cars
 - Average Speed
 - Congestion Percentage
 
-### Output
+### Model Output
 
 - HIGH CONGESTION
 - LOW CONGESTION
 
+Additional Intelligent Outputs
+
+- Estimated Delay
+- Congestion Risk
+- Signal Recommendation
+- Traffic Management Recommendation
+
 ---
 
-# 🚀 How It Works
+# 🔄 System Workflow
 
 ```
-NetLogo Simulation
-        │
-        ▼
+NetLogo Traffic Simulation
+            │
+            ▼
 Traffic Dataset (.csv)
-        │
-        ▼
-Python Data Analysis
-        │
-        ▼
+            │
+            ▼
+Python Data Processing
+            │
+            ▼
 Machine Learning Training
-        │
-        ▼
+            │
+            ▼
 traffic_model.pkl
-        │
-        ▼
+            │
+            ▼
 Flask REST API
-        │
-        ▼
+            │
+            ▼
 React Dashboard
-        │
-        ▼
-Traffic Congestion Prediction
+            │
+            ▼
+Traffic Prediction
+            │
+            ▼
+Smart Recommendations
+            │
+            ▼
+PDF Report + Analytics Dashboard
 ```
 
 ---
 
-# 📊 Screenshots
+# 📷 Screenshots
 
 ## 🚦 NetLogo Traffic Simulation
 
-![NetLogo Simulation](screenshots/netlogo.png)
+![NetLogo](screenshots/netlogo.png)
 
 ---
 
@@ -193,58 +336,48 @@ Traffic Congestion Prediction
 
 ---
 
-## 📈 Traffic Prediction
+## 🤖 AI Prediction
 
 ![Prediction](screenshots/prediction.png)
 
 ---
 
-## 🔌 Flask Backend API
+## 📄 PDF Report
 
-![Backend API](screenshots/backend_API.png)
-
----
-
-# 📁 Dataset
-
-The dataset contains traffic information generated through NetLogo simulation.
-
-Example fields:
-
-| Column | Description |
-|---------|-------------|
-| tick | Simulation tick |
-| waiting_cars | Number of waiting vehicles |
-| congestion | Congestion percentage |
-| average_speed | Average vehicle speed |
+![Report](screenshots/report.png)
 
 ---
 
-# 📡 API Endpoint
+## 📊 Analytics Dashboard
 
-## POST `/predict`
-
-### Request
-
-```json
-{
-  "waiting_cars": 40,
-  "average_speed": 10,
-  "congestion": 80
-}
-```
-
-### Response
-
-```json
-{
-  "prediction": "HIGH CONGESTION"
-}
-```
+![Analytics](screenshots/analytics4.png)
+![Analytics](screenshots/analytics1.png)
+![Analytics](screenshots/analytics2.png)
+![Analytics](screenshots/analytics3.png)
 
 ---
 
-# 👩‍💻 Author
+## 🔧 Flask REST API
+
+![Backend](screenshots/backend_api.png)
+
+---
+
+# 📈 Future Improvements
+
+- Live Traffic Sensor Integration
+- Google Maps Integration
+- IoT Smart Traffic Lights
+- Deep Learning Prediction Model
+- Multiple Junction Prediction
+- Azure Cloud Deployment
+- Mobile Application
+- Real-time CCTV Image Processing
+- Emergency Vehicle Priority Detection
+
+---
+
+# 👩‍💻 Developer
 
 **Nishadi Wickramaarachchi**
 
@@ -252,25 +385,16 @@ Example fields:
 - 🏫 Faculty of Computing
 - 📍 University of Sri Jayewardenepura
 
-GitHub:
+GitHub
+
 https://github.com/Navodya52
 
 ---
 
-# ⭐ Future Improvements
-
-- Live traffic visualization
-- Real-time sensor integration
-- Cloud deployment (Azure)
-- Multiple intersection prediction
-- Interactive traffic analytics dashboard
-
----
-
-# 📄 License
+# 📜 License
 
 This project is developed for educational and research purposes.
 
 ---
 
-⭐ If you found this project useful, consider giving it a star on GitHub.
+⭐ If you found this project useful, please consider giving it a star.
