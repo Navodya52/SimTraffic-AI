@@ -359,7 +359,7 @@ PDF Report + Analytics Dashboard
 
 ## 🔧 Flask REST API
 
-![Backend](screenshots/backend_api.png)
+![Backend](screenshots/backend_API.png)
 
 ---
 
