@@ -353,7 +353,7 @@ PDF Report + Analytics Dashboard
 ![Analytics](screenshots/analytics4.png)
 ![Analytics](screenshots/analytics1.png)
 ![Analytics](screenshots/analytics2.png)
-![Analytics](screenshots/analytics3.png)
+![Analytics](screenshots/analytics3..png)
 
 ---
 
