@@ -201,7 +201,7 @@ Traffic Congestion Prediction
 
 ## 🔌 Flask Backend API
 
-![Backend API](screenshots/backend_api.png)
+![Backend API](screenshots/backend_API.png)
 
 ---
 
